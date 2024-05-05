@@ -4,6 +4,17 @@
     <div class="card-header">
       <h4 class="card-title">Products</h4>
     </div>
+{{keyword}}
+    <div class="card-body d-flex">
+      <div class="input-group">
+        <div class="form-outline" data-mdb-input-init>
+          <input type="text" class="form-control " [(ngModel)]="keyword">
+        </div>
+        <button (click)="searchProducts()" class="btn btn-outline-primary " data-mdb-ripple-init>
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </div>
 
     <div class="card-body">
       <table class="table ">
@@ -12,6 +23,7 @@
             <th>Name</th>
             <th>Price</th>
             <th>Checked</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -32,10 +44,27 @@
 
 
           </td>
+
+          <td>
+            <button (click)="onDeleteProduct(product)" class="btn btn-outline-danger m-2">
+              <i class="bi bi-trash"></i>
+            </button>
+
+            <button (click)="onEditProduct(product)" class="btn btn-outline-primary">
+              <i class="bi bi-pencil"></i>
+            </button>
+          </td>
         </tr>
         </tbody>
 
       </table>
+
+      <ul class="nav nav-pills" >
+        <li *ngFor="let item of [].constructor(this.totalPages); let i = index">
+          <a  (click)="HandleGoToPage(i+1)"  [ngClass]="i+1==currentPage?'btn-info':'btn-outline-info'" class="btn ms-2 mt-1">{{i+1}}</a>
+        </li>
+      </ul>
+
     </div>
 
   </div>

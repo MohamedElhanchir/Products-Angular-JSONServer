@@ -1,38 +1,172 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Product 1",
-      "price": 100,
-      "checked": false
-    }
-,
-    {
-      "id": 2,
-      "name": "Product 2",
-      "price": 200,
-      "checked": false
-    }
-,
-    {
-      "id": 3,
-      "name": "Product 3",
-      "price": 300,
-      "checked": false
-    }
-,
-    {
-      "id": 4,
+      "id": "4",
       "name": "Product 4",
       "price": 400,
-      "checked": false
-    }
-,
-    {
-      "id": 5,
-      "name": "Product 5",
-      "price": 500,
       "checked": true
+    },
+    {
+      "id": "5",
+      "name": "Server HP",
+      "price": 116362,
+      "checked": false
+    },
+    {
+      "id": "6",
+      "name": "Product 6",
+      "price": 600,
+      "checked": false
+    },
+    {
+      "id": "ce95",
+      "name": "Pc portable",
+      "price": 7200,
+      "checked": true
+    },
+    {
+      "id": "cd9a",
+      "name": "SET",
+      "price": 12223,
+      "checked": false
+    },
+    {
+      "name": "SET",
+      "price": 12223,
+      "checked": false,
+      "id": "KAcqrzR"
+    },
+    {
+      "name": "Computer DELL",
+      "price": 2599,
+      "checked": true,
+      "id": "kCDzL3L"
+    },
+    {
+      "name": "Computer DELL",
+      "price": 2599,
+      "checked": true,
+      "id": "ToL_Lcg"
+    },
+    {
+      "name": "Computer ASUS",
+      "price": 1799,
+      "checked": false,
+      "id": "ToL_Lcg32"
+    },
+    {
+      "name": "Computer HP",
+      "price": 2099,
+      "checked": true,
+      "id": "vPL_eJkD"
+    },
+    {
+      "name": "Laptop Lenovo",
+      "price": 1599,
+      "checked": false,
+      "id": "qNW_rTSh"
+    },
+    {
+      "name": "Desktop Acer",
+      "price": 1299,
+      "checked": true,
+      "id": "mGQ_kOpa"
+    },
+    {
+      "name": "Computer Apple",
+      "price": 3499,
+      "checked": true,
+      "id": "lZR_bNqa"
+    },
+    {
+      "name": "PC Gaming MSI",
+      "price": 2999,
+      "checked": false,
+      "id": "sDY_pAfx"
+    },
+    {
+      "name": "Workstation Dell",
+      "price": 3999,
+      "checked": true,
+      "id": "aXE_cVxt"
+    },
+    {
+      "name": "Computer Microsoft",
+      "price": 2299,
+      "checked": false,
+      "id": "ahKB_gEx"
+    },
+    {
+      "name": "Chromebook Samsung",
+      "price": 899,
+      "checked": true,
+      "id": "rIMd_nJu"
+    },
+    {
+      "name": "Ultrabook LG",
+      "price": 2199,
+      "checked": false,
+      "id": "dPH_dqWo"
+    },
+    {
+      "name": "Tablet Huawei",
+      "price": 599,
+      "checked": true,
+      "id": "jOL_ufRi"
+    },
+    {
+      "name": "Convertible Sony",
+      "price": 1699,
+      "checked": true,
+      "id": "wTX_hYfs"
+    },
+    {
+      "name": "Computer Toshiba",
+      "price": 1799,
+      "checked": false,
+      "id": "iVN_fdZl"
+    },
+    {
+      "name": "Computer Fujitsu",
+      "price": 1999,
+      "checked": false,
+      "id": "gQL_tUdi"
+    },
+    {
+      "name": "Server Oracle",
+      "price": 5999,
+      "checked": true,
+      "id": "uAB_rEdx"
+    },
+    {
+      "name": "Mainframe HPE",
+      "price": 8999,
+      "checked": false,
+      "id": "f2WO_jNm"
+    },
+    {
+      "name": "Desktop Panasonic",
+      "price": 1499,
+      "checked": true,
+      "id": "zCF4_vPl"
+    },
+    {
+      "name": "PC All-in-One LG",
+      "price": 1899,
+      "checked": false,
+      "id": "bHK_s3Lo"
+    },
+    {
+      "name": "Thin Client Dell",
+      "price": 799,
+      "checked": true,
+      "id": "p3TB_iPu"
+    },
+    {
+      "name": "Pc portable",
+      "price": 2828,
+      "checked": false,
+      "id": "2JLbDSQ"
     }
   ]
 }

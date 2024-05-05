@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+   title:String='enset-app';
+
   actions :Array<any> = [
     {title: 'Home', icon: 'house', link: '/home'},
     {title: 'Products', icon: 'box', link: '/products'},

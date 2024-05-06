@@ -1,172 +1,262 @@
 {
   "products": [
     {
-      "id": "4",
-      "name": "Product 4",
-      "price": 400,
-      "checked": true
-    },
-    {
-      "id": "5",
-      "name": "Server HP",
-      "price": 116362,
-      "checked": false
-    },
-    {
-      "id": "6",
-      "name": "Product 6",
-      "price": 600,
-      "checked": false
-    },
-    {
-      "id": "ce95",
-      "name": "Pc portable",
-      "price": 7200,
-      "checked": true
-    },
-    {
-      "id": "cd9a",
-      "name": "SET",
-      "price": 12223,
-      "checked": false
-    },
-    {
-      "name": "SET",
-      "price": 12223,
-      "checked": false,
-      "id": "KAcqrzR"
-    },
-    {
-      "name": "Computer DELL",
-      "price": 2599,
-      "checked": true,
-      "id": "kCDzL3L"
-    },
-    {
-      "name": "Computer DELL",
-      "price": 2599,
-      "checked": true,
-      "id": "ToL_Lcg"
-    },
-    {
       "name": "Computer ASUS",
       "price": 1799,
       "checked": false,
-      "id": "ToL_Lcg32"
+      "id": "ToL_Lcg"
     },
     {
       "name": "Computer HP",
       "price": 2099,
-      "checked": true,
-      "id": "vPL_eJkD"
+      "checked": false,
+      "id": "vPL_eJk"
     },
     {
       "name": "Laptop Lenovo",
       "price": 1599,
-      "checked": false,
-      "id": "qNW_rTSh"
+      "checked": true,
+      "id": "qNW_rTh"
     },
     {
       "name": "Desktop Acer",
       "price": 1299,
-      "checked": true,
-      "id": "mGQ_kOpa"
+      "checked": false,
+      "id": "mGQ_kOp"
     },
     {
       "name": "Computer Apple",
       "price": 3499,
       "checked": true,
-      "id": "lZR_bNqa"
+      "id": "lZR_bNq"
     },
     {
       "name": "PC Gaming MSI",
       "price": 2999,
       "checked": false,
-      "id": "sDY_pAfx"
+      "id": "sDY_pAf"
     },
     {
       "name": "Workstation Dell",
       "price": 3999,
       "checked": true,
-      "id": "aXE_cVxt"
+      "id": "aXE_cVt"
     },
     {
       "name": "Computer Microsoft",
       "price": 2299,
       "checked": false,
-      "id": "ahKB_gEx"
+      "id": "hKB_gEx"
     },
     {
       "name": "Chromebook Samsung",
       "price": 899,
       "checked": true,
-      "id": "rIMd_nJu"
+      "id": "rIM_nJu"
     },
     {
       "name": "Ultrabook LG",
       "price": 2199,
       "checked": false,
-      "id": "dPH_dqWo"
+      "id": "dPH_qWo"
     },
     {
       "name": "Tablet Huawei",
       "price": 599,
       "checked": true,
-      "id": "jOL_ufRi"
+      "id": "jOL_uRi"
     },
     {
       "name": "Convertible Sony",
       "price": 1699,
       "checked": true,
-      "id": "wTX_hYfs"
+      "id": "wTX_hYs"
     },
     {
       "name": "Computer Toshiba",
       "price": 1799,
       "checked": false,
-      "id": "iVN_fdZl"
+      "id": "iVN_fZl"
+    },
+    {
+      "name": "Desktop IBM",
+      "price": 2499,
+      "checked": true,
+      "id": "cJM_mWq"
     },
     {
       "name": "Computer Fujitsu",
       "price": 1999,
       "checked": false,
-      "id": "gQL_tUdi"
+      "id": "gQL_tUi"
     },
     {
       "name": "Server Oracle",
       "price": 5999,
       "checked": true,
-      "id": "uAB_rEdx"
+      "id": "uAB_rEx"
     },
     {
       "name": "Mainframe HPE",
       "price": 8999,
       "checked": false,
-      "id": "f2WO_jNm"
+      "id": "fWO_jNm"
     },
     {
       "name": "Desktop Panasonic",
       "price": 1499,
       "checked": true,
-      "id": "zCF4_vPl"
+      "id": "zCF_vPl"
     },
     {
       "name": "PC All-in-One LG",
       "price": 1899,
       "checked": false,
-      "id": "bHK_s3Lo"
+      "id": "bHK_sLo"
     },
     {
       "name": "Thin Client Dell",
       "price": 799,
       "checked": true,
-      "id": "p3TB_iPu"
+      "id": "pTB_iPu"
     },
     {
-      "name": "Pc portable",
-      "price": 2828,
+      "name": "Laptop Acer",
+      "price": 1599,
+      "checked": true,
+      "id": "kUY_aKo"
+    },
+    {
+      "name": "Computer Lenovo",
+      "price": 2099,
       "checked": false,
-      "id": "2JLbDSQ"
+      "id": "eRY_bJl"
+    },
+    {
+      "name": "Desktop HP",
+      "price": 1799,
+      "checked": true,
+      "id": "mWE_cMm"
+    },
+    {
+      "name": "Chromebook Dell",
+      "price": 899,
+      "checked": false,
+      "id": "xQC_dNn"
+    },
+    {
+      "name": "Ultrabook ASUS",
+      "price": 2199,
+      "checked": true,
+      "id": "zWS_ePo"
+    },
+    {
+      "name": "Tablet Samsung",
+      "price": 599,
+      "checked": false,
+      "id": "vTE_fQp"
+    },
+    {
+      "name": "Convertible Lenovo",
+      "price": 1699,
+      "checked": true,
+      "id": "qER_gSr"
+    },
+    {
+      "name": "Laptop HP",
+      "price": 2099,
+      "checked": false,
+      "id": "oDF_hTs"
+    },
+    {
+      "name": "Desktop Dell",
+      "price": 3999,
+      "checked": false,
+      "id": "rTE_jVu"
+    },
+    {
+      "name": "Server IBM",
+      "price": 5999,
+      "checked": true,
+      "id": "xWD_kWv"
+    },
+    {
+      "name": "Desktop Apple",
+      "price": 3499,
+      "checked": false,
+      "id": "nQD_lXw"
+    },
+    {
+      "name": "Computer Samsung",
+      "price": 899,
+      "checked": true,
+      "id": "lWE_mYx"
+    },
+    {
+      "name": "Laptop Dell",
+      "price": 1599,
+      "checked": false,
+      "id": "mRE_nZy"
+    },
+    {
+      "name": "Computer Lenovo",
+      "price": 1799,
+      "checked": true,
+      "id": "pTE_oAz"
+    },
+    {
+      "name": "Desktop Acer",
+      "price": 1299,
+      "checked": false,
+      "id": "qWE_pBz"
+    },
+    {
+      "name": "Chromebook HP",
+      "price": 899,
+      "checked": true,
+      "id": "rTE_qCa"
+    },
+    {
+      "name": "Tablet Lenovo",
+      "price": 599,
+      "checked": false,
+      "id": "sWE_rDb"
+    },
+    {
+      "name": "Convertible ASUS",
+      "price": 1699,
+      "checked": true,
+      "id": "tRE_sEc"
+    },
+    {
+      "name": "Laptop ASUS",
+      "price": 2099,
+      "checked": false,
+      "id": "uTE_tFd"
+    },
+    {
+      "name": "Desktop Samsung",
+      "price": 2999,
+      "checked": true,
+      "id": "vWE_uGe"
+    },
+    {
+      "name": "Computer Dell",
+      "price": 3999,
+      "checked": false,
+      "id": "wRE_vHf"
+    },
+    {
+      "name": "Server HP",
+      "price": 5999,
+      "checked": true,
+      "id": "xTE_wIg"
+    },
+    {
+      "name": "Computer Acer",
+      "price": 899,
+      "checked": true,
+      "id": "zRE_yKi"
     }
   ]
 }

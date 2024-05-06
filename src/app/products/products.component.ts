@@ -4,6 +4,7 @@ import {ProductService} from "../services/product.service";
 import {Product} from "../model/product.model";
 import {Observable} from "rxjs";
 import {Router} from "@angular/router";
+import {AppStateService} from "../services/app-state.service";
 
 @Component({
   selector: 'app-products',
@@ -12,11 +13,7 @@ import {Router} from "@angular/router";
 })
 export class ProductsComponent implements OnInit{
 
-  public products :Array<Product> = [];
-  public keyword: string = "";
-  totalPages:number = 0;
-  pageSizes:number=4;
-  currentPage:number=1;
+
 
   //products$! :Observable<Array<Product>>;
  /*
@@ -28,7 +25,8 @@ export class ProductsComponent implements OnInit{
   *maintenat on peut injecter le service ProductService
    */
   constructor(private productService: ProductService,
-              private router: Router) {
+              private router: Router,
+              public appState: AppStateService) {
 
   }
 
@@ -50,20 +48,25 @@ export class ProductsComponent implements OnInit{
    */
 
   searchProducts() {
-   this.productService.searchProducts(this.keyword,this.currentPage,this.pageSizes).subscribe({
+   this.productService.searchProducts(this.appState.productsState.keyword,this.appState.productsState.currentPage,this.appState.productsState.pageSizes).subscribe({
 
       next: (data) => {
-        this.products = data.body as Product[];
+        this.appState.productsState.products = data.body as Product[];
         let totalProducts:number = parseInt(data.headers.get('X-Total-Count')!);
         console.log('Total Products', totalProducts);
+        this.appState.productsState.totalProducts = totalProducts;
 
-        this.totalPages = ~~(totalProducts/this.pageSizes);
-        console.log('Total Pages', this.totalPages);
+        this.appState.productsState.totalPages = ~~(totalProducts/this.appState.productsState.pageSizes);
+        console.log('Total Pages', this.appState.productsState.totalPages);
         //~~ permet de retourner un entier en typeS
-        if(totalProducts % this.pageSizes!=0){
-          this.totalPages++;
+        if(totalProducts % this.appState.productsState.pageSizes!=0){
+          this.appState.productsState.totalPages++;
         }
-        console.log('Total Pages', this.totalPages);
+        console.log('Total Pages', this.appState.productsState.totalPages);
+
+        this.appState.productsState.productsSizeInPage = this.appState.productsState.pageSizes+(totalProducts-(this.appState.productsState.totalPages*this.appState.productsState.pageSizes));
+
+
       },
       error: (error) => {
         console.log('Error', error);
@@ -95,8 +98,20 @@ export class ProductsComponent implements OnInit{
       this.productService.deleteProduct(product).subscribe(
         {
           next: (data) => {
-            //this.getAllProducts();
-            this.products = this.products.filter(p => p.id !== product.id);
+            //this.searchProducts()();
+            /*
+            si je fais un searchProducts() ici, je vais faire un appel à l'api
+            pour récupérer la liste des produits. Mais je peux faire une suppression
+            locale en supprimant le produit de la liste des produits
+            si je le fais j'ai pas besoin du code au dessus et le variable $productsSizeInPage
+             */
+            this.appState.productsState.products = this.appState.productsState.products.filter((p:any) => p.id !== product.id);
+            this.appState.productsState.totalProducts--;
+            this.appState.productsState.productsSizeInPage--;
+            if (this.appState.productsState.productsSizeInPage == 0) {
+              this.appState.productsState.currentPage--;
+              this.searchProducts();
+            }
           },
           error: (error) => {
             console.log('Error', error);
@@ -112,7 +127,7 @@ export class ProductsComponent implements OnInit{
 
 
   HandleGoToPage(page: number) {
-    this.currentPage = page;
+    this.appState.productsState.currentPage = page;
     this.searchProducts();
   }
 }
